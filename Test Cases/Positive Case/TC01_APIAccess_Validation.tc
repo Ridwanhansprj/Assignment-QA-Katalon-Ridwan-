@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01_APIAccess_Validation</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>907c0d5f-b3bf-48be-b9b5-6cc27c3252a8</testCaseGuid>
+</TestCaseEntity>

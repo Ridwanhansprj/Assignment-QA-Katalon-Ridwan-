@@ -39,4 +39,9 @@
       <initValue>''</initValue>
       <name>updatedJob</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>userEmail</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

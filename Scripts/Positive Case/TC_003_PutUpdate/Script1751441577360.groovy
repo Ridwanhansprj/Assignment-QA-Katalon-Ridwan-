@@ -40,7 +40,7 @@ KeywordUtil.logInfo("Memverifikasi status code dan header...")
 WS.verifyResponseStatusCode(response, 200)
 String contentTypeHeader = response.getHeaderField('Content-Type')
 assert contentTypeHeader.contains('application/json')
-KeywordUtil.logInfo("✔️ Status Code dan Content-Type sudah sesuai.")
+KeywordUtil.logInfo("Status Code dan Content-Type sudah sesuai.")
 
 'Parse JSON'
 def jsonSlurper = new JsonSlurper()

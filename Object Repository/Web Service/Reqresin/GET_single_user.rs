@@ -13,12 +13,20 @@
    <httpBody></httpBody>
    <httpBodyContent></httpBodyContent>
    <httpBodyType></httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>x-api-key</name>
+      <type>Main</type>
+      <value>${GlobalVariable.apiKey}</value>
+      <webElementGuid>18fbbf00-b301-4b4b-b2c3-99e7ccaedcb6</webElementGuid>
+   </httpHeaderProperties>
    <katalonVersion>9.7.5</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.baseURL}/api/users/${GlobalVariable.id}</restUrl>
+   <restUrl>${GlobalVariable.baseURL}/api/users/4</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

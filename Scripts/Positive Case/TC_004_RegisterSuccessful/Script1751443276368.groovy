@@ -40,7 +40,7 @@ KeywordUtil.logInfo("Memverifikasi status code dan header...")
 WS.verifyResponseStatusCode(response, 200)
 String contentTypeHeader = response.getHeaderField('Content-Type')
 assert contentTypeHeader.contains('application/json')
-KeywordUtil.logInfo("✔️ Status Code dan Content-Type sudah sesuai.")
+KeywordUtil.logInfo("Status Code dan Content-Type sudah sesuai.")
 
 'Parse JSON'
 def jsonSlurper = new JsonSlurper()
@@ -55,7 +55,7 @@ assert parsedResponse.id == 4 : "ID yang dikembalikan tidak sesuai. Diharapkan 4
 assert parsedResponse.id instanceof Integer : "Tipe data ID harus Integer"
 assert parsedResponse.token instanceof String && !(parsedResponse.token.isEmpty()) : "Token harus berupa String dan tidak boleh kosong"
 
-KeywordUtil.logInfo("✔️ ID dan Token telah terverifikasi dengan benar.")
+KeywordUtil.logInfo("ID dan Token telah terverifikasi dengan benar.")
 KeywordUtil.logInfo("    User ID: ${parsedResponse.id}")
 KeywordUtil.logInfo("    User Token: ${parsedResponse.token}")
 

@@ -25,7 +25,7 @@ import internal.GlobalVariable
 KeywordUtil.logInfo("Memulai Tes: Get Single User dengan Verifikasi Lengkap")
 
 'Kirim Request'
-def response = WS.sendRequest(findTestObject('Object Repository/Web Service/ReqresIn/GET_single_user'))
+def response = WS.sendRequest(findTestObject('Object Repository/Web Service/Reqresin/GET_single_user'))
 
 'Check Status & Header'
 KeywordUtil.logInfo("Memverifikasi status code dan header...")

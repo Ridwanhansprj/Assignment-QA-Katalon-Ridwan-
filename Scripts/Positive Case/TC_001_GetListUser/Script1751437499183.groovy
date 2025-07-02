@@ -32,7 +32,7 @@ KeywordUtil.logInfo("Memverifikasi status code dan header...")
 WS.verifyResponseStatusCode(response, 200)
 String contentTypeHeader = response.getHeaderField('Content-Type')
 assert contentTypeHeader.contains('application/json')
-KeywordUtil.logInfo("✔️ Status Code dan Content-Type sudah sesuai.")
+KeywordUtil.logInfo("Status Code dan Content-Type sudah sesuai.")
 
 'Parse JSON'
 def jsonSlurper = new JsonSlurper()
@@ -70,11 +70,12 @@ userList.eachWithIndex { user, index ->
 }
 KeywordUtil.logInfo("Semua user dalam array 'data' telah terverifikasi.")
 
-'Mengambil data spesifik dari user pertama'
-def FirstUserCheck = userList[3]
-def userId = FirstUserCheck.id
-def userEmail = FirstUserCheck.email
+'Mengambil data spesifik dari user ke-empat'
+def UserCheck = userList[3]
+def userId = UserCheck.id
+def userEmail = UserCheck.email
 GlobalVariable.id = userId
+GlobalVariable.userEmail = userEmail
 
 'Data Spesifik User Pertama:'
 KeywordUtil.logInfo("ID    : " + userId)
